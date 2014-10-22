@@ -1,0 +1,79 @@
+//starter position styles
+body{
+	background: blue;
+	}
+	
+.container{
+	max-width: 850px;
+	width:100%;
+	margin:0 auto;
+	
+}
+header{
+	@include linear-gradient(#1e5799, #2989d8);
+	height:80px;
+	display: block;
+	position: fixed;
+}
+
+.logo{
+
+	display: block;
+	float: left;
+	
+}
+
+.social{
+	
+	display: block;
+	float: right;
+	
+	}
+.social a{
+	color: white;
+	display: block;
+	float: right;
+	padding: 0px 6px 0px 0px;
+	border-right: white;
+	line-height: inherit;
+	
+		
+	}
+
+.mainnav{
+	
+	display: block;
+	float: right
+}
+
+.mainnav a{
+	display: block;
+	float: right;
+}
+.headline{
+	color: black;
+	display: block;
+}
+
+
+
+.mainbody{
+	
+	background-color: blue;
+	position: relative;
+	padding: 20px 19px 17px 20px;
+
+}
+
+.featurework{
+	background-color: grey;
+
+}
+.recentbar{
+	background-color: #6d5c21;
+	display: block;
+}
+
+footer{
+	background-color: black;
+}
