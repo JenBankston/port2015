@@ -9,19 +9,9 @@ body{
 	margin:0 auto;
 	
 }
-header{
-	@include linear-gradient(#1e5799, #2989d8);
-	height:80px;
-	display: block;
-	position: fixed;
-}
 
-.logo{
 
-	display: block;
-	float: left;
-	
-}
+
 
 .social{
 	
@@ -29,16 +19,7 @@ header{
 	float: right;
 	
 	}
-.social a{
-	color: white;
-	display: block;
-	float: right;
-	padding: 0px 6px 0px 0px;
-	border-right: white;
-	line-height: inherit;
-	
-		
-	}
+
 
 .mainnav{
 	

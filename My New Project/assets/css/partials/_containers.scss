@@ -5,17 +5,24 @@
 	@include outer-container;
 
 
-.headline{
-	@include span-columns(12);
-
-}
-.mainbody{
-	@include span-columns(12);
-
-
+	.headline{
+		@include span-columns(12);
+		height: 300px;
+	}
 	.featurework{
 	
 		@include span-columns(9);
+		
+		li{
+			@include span-columns(3);
+			@include omega(4n);
+			
+			img{
+				width:90%;
+				height: auto;
+				padding: 5px;
+			}
+		}
 		}
 	
 	
@@ -24,12 +31,16 @@
 	
 		@include span-columns(3);
 		@include omega();
+		float: right;
 		background-color: gray;
+		
+		.callout{
+			@include span-columns(3);
+			padding: 3px;
+			font-size: .5em;
+		}
 		}
 
-	}
+	
 	}
 	
-footer {
-	@include outer-container;
-}
