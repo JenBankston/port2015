@@ -1,0 +1,47 @@
+
+
+header {
+  h1 {
+    float: left;
+  }
+
+  .source {
+    float: right;
+  }
+}
+
+section {
+  @include outer-container;
+  text-align: center;
+  margin-bottom: 3em;
+
+  & > code, code.block {
+    display: block;
+  }
+
+  div {
+    height: $body-line-height*4;
+    line-height: $body-line-height;
+    text-align: left;
+    padding: .5em;
+  }
+
+  
+   
+
+  &.fifth {
+    div.box {
+	    img{width: 100%;
+		    overflow: hidden;
+	    }
+	 
+      font-size: 0.78em;
+      height: 8em;
+      margin-top: 3em;
+     
+      @include span-columns(3);
+	      @include omega(4n);
+    }
+  }
+}
+

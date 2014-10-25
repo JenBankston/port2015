@@ -1,0 +1,38 @@
+
+
+.project{
+	@include outer-container;
+	.arrow-lft{@include triangle(10px 12px, gray, left); position: fixed; top: em(150); left: em(100);}
+	.arrow-rgt{@include triangle(10px 12px, gray, right); position: fixed; top: em(150); right: em(100);}
+		
+		
+	
+	div {
+		height: auto;
+		width: 90%;
+		margin: auto;
+		 @include breakpoint(medium){width:75%;
+			 						max-width: 600px; }
+		
+			
+			 
+			 }
+		}
+		
+		
+#navprojectnav{
+			background-color: rgba(49, 156, 10, 0.92);
+			display: block;
+			height: 70px; 
+			@include row();
+			color: #ffffff;
+			text-align: center;
+			.left{color: white; float: left;}
+			.right{color: white; float: right;}
+
+			
+			
+			
+}		
+		.arrow-lft{@include triangle(10px 12px, white, left); position: fixed; top: em(150); left: em(100);}
+	.arrow-rgt{@include triangle(10px 12px, gray, right); position: fixed; top: em(150); right: em(100);}
