@@ -1,0 +1,150 @@
+ 
+header {
+  h1 {
+    float: left;
+  }
+
+  .source {
+    float: right;
+  }
+}
+
+section {
+  @include outer-container;
+  text-align: center;
+  margin-bottom: 3em;
+
+  & > code, code.block {
+    display: block;
+  }
+
+  div {
+    height: $body-line-height*4;
+    line-height: $body-line-height;
+    text-align: left;
+    padding: 1em;
+  }
+  //HEADLINE STYLeS
+  #headline {
+	@include row();
+	height: 60px;
+	@include breakpoint(medium){
+		height: 250px;
+	}
+	@include breakpoint(large){
+		height: 275px;
+	}
+
+}
+//MAIN CONTENT
+  
+  &.second {
+    div {
+      height: 40em;
+      background-color: #d00f0f;
+
+      &#alpha {
+	      background-color: grey;
+	      height: em(400);
+	       @include span-columns(12);
+	      @include breakpoint(medium){ 
+		       height: em(150);}
+	      @include breakpoint(large){
+				 @include span-columns(4);
+				height: 100%;
+				 
+				  }
+				   .end{
+				   border: none;}
+      }
+
+      &#beta {
+	    background-color: blue;
+        padding: 0;
+        line-height: $body-line-height*3;
+        text-align: center;
+        @include span-columns(12);
+        
+         @include breakpoint(large){
+	          @include span-columns(8);}
+			  
+			  .box{height: 47%;
+				  overflow: hidden;
+			  }
+			  
+				img{width: 100%;}
+				 
+			  
+        aside {
+	      background-color: fuchsia;
+		  border: none;
+          height: 84%;
+          padding: .5px;
+          @include span-columns(12);
+           @include breakpoint(medium){ 
+	           @include span-columns(6 of 12);}
+          @include breakpoint(large){
+	          @include span-columns(4 of 8);}
+
+        }
+
+        article {
+	      border-bottom: 0;
+	      background-color: green;
+          height: 100%;
+          padding: .5em;
+           @include span-columns(12);
+           @include breakpoint(medium){ 
+	           @include span-columns(6 of 12);
+	           height: 84%;
+			}
+          @include breakpoint(large){
+	          @include span-columns(4 of 8);
+	         }
+
+        }
+      }
+    }
+  }
+	  
+  .callout{
+	  text-align: left;
+	  width: 80%;
+	  border-bottom: 1px solid black;
+	   border-right: 0px ;
+	  
+	  
+	   @include breakpoint(medium){
+	  float: left;
+	  display: block;
+	  width: 28%;
+	  margin: 7px;
+	  border-right: 1px solid black;
+	  border-bottom: none;}
+	  
+	  @include breakpoint(large){
+	  float: none;
+	  display: block;
+	  width: 90%;
+	  margin: 0px;
+	  border-bottom: 1px solid black;
+	   border-right: 0px ;}
+	   
+	   a,
+	   label{padding: 20px 0px 0px 4px;}
+		  
+	   
+	   
+	   }
+	   
+	  .work{
+		  @include span-columns(12);
+		  li.box{
+			  @include span-columns(3);
+			  @include omega(4n);
+		  }
+	  } 
+	   
+	 }
+
+   

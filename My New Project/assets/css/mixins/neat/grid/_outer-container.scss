@@ -1,4 +1,4 @@
-@mixin outer-container() {
+@mixin outer-container {
   @include clearfix;
   max-width: $max-width;
   margin: {

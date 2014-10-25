@@ -1,0 +1,100 @@
+
+
+header {
+  h1 {
+    float: left;
+  }
+
+  .source {
+    float: right;
+  }
+}
+
+section {
+  @include outer-container;
+  text-align: center;
+  margin-bottom: 3em;
+
+  & > code, code.block {
+    display: block;
+  }
+
+  div {
+    height: $body-line-height*4;
+    line-height: $body-line-height;
+    text-align: left;
+    padding: .5em;
+  }
+
+  
+   .title{
+	  @include span-columns (12)}
+
+
+  &.fifth {
+  		.thumbholder{
+	  		
+	  		@include breakpoint(large){ 
+					 							@include span-columns(8);
+					 							@include shift(2)
+				      							
+											}
+  		}
+	      div.box {
+					img{width: 100%;}	
+					overflow: hidden;
+		  		@include row(table);	
+		  			
+			      font-size: 0.78em;
+			      height: 8em;
+			      margin-top: 2em;
+			      @include breakpoint(medium){ @include reset-display();
+				      							@include span-columns(6);
+				      							@include pad();
+				      							height: 14em;
+					  							@include omega(2n);
+					  							margin-top: 1em;
+											}
+					@include breakpoint(large){ @include reset-display();
+					 							@include span-columns(4 of 8);
+					 							@include pad();
+				      							height: 15em;
+					  							@include omega(2n);
+					  							margin-top: .5em;
+											}
+				 
+				}
+   
+}
+
+ &.third {
+    div#dummy {
+      border-bottom: 0;
+      height: 5.5em;
+      text-align: center;
+    }
+
+    div#alpha {
+      @include span-columns(12);
+      @include row(table);
+      margin-bottom: 0;
+      padding: 0;
+
+      div.port {
+        @include span-columns(4);
+        @include pad();
+        border-right: 1px solid rgba(255,255,255, 0.5);
+      }
+
+      article {
+        height: 20em;
+        @include span-columns(8);
+        @include reset-display;
+        @include pad();
+      }
+    }
+  }
+
+  }
+
+
