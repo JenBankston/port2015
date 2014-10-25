@@ -2,10 +2,7 @@
 
 .project{
 	@include outer-container;
-	.arrow-lft{@include triangle(10px 12px, gray, left); position: fixed; top: em(150); left: em(100);}
-	.arrow-rgt{@include triangle(10px 12px, gray, right); position: fixed; top: em(150); right: em(100);}
-		
-		
+			
 	
 	div {
 		height: auto;
