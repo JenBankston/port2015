@@ -1,8 +1,12 @@
 // TYPEFACES
 
-$sans: 'Source Sans Pro', 'sans-serif'; 
+$sans: "jaf-domus-titling-web", 'sans-serif'; 
+$text: "ff-enzo-web", 'sans-serif';
 
-
+//font weights for $sans
+$wimpy:		200, lighter;
+$mid:		500, normal;
+$display:	700, bolder;
 
 // RESPONSIVE TYPOGRAPHY
 // http://css-tricks.com/rems-ems/
@@ -15,19 +19,21 @@ html {
 }
 
 body {
-	font-family: $sans;
+	font-family: $text;
     font-weight: 400;
-    color: $base3;
+    color: $textcolor;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
 	font-family: $sans;
-	font-weight: 700;
+	font-weight: $display;
 	margin: 0;
+	color: $headcolor;
 }
 
 h1 {
+	
 	@include font-size(33);
 	line-height: 1;
 }
@@ -44,15 +50,15 @@ h5 {
 	@include font-size(16);
 }		
 h6 {
-	color: $base7;
+;
 	@include font-size(12);
 }	
 
 
 
 p, li, dt, dd, label {
-	color: $base3;
-	font-family: $sans;
+	color: $textcolor;
+	font-family: $text;
 	line-height: 1.6;
 	@include font-size(16);
 }

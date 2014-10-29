@@ -9,9 +9,9 @@ a {
     @include transition (all 0.25s ease);
 }
 a:link 		{color: $anchor;}  // unvisited  
-a:visited 	{color: $anchor;}  // visited  
+//a:visited 	{color: $anchor;}  // visited  
 a:hover 	{color: $anchor-alt;}  // mouseover  
-a:active 	{color: $anchor;}  // selected  
+//a:active 	{color: $anchor;}  // selected  
 
 
 

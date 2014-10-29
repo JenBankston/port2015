@@ -20,16 +20,42 @@ $navy:      #236B8E;
 $red:       #CC0000;
 $brick:     #990000;
 
+//JEN's COLORS
+$softwhite:		#fffffa;
+$cream: 		#fffedb;
+
+$kellygreen:	#44b36e;
+$lgtkellygreen:	#50d281;
+$mutedgreen:	#9bd2b0;
+
+$accentorange:	#ffae61;
+
+$grnblack:		#071a0e;
+
+//JEN's Patterns
+$rule: 2px;
 
 
+//Jen Descriptor Var
+$maincolor: 	$kellygreen;
+$textcolor:		$grnblack;
+$headcolor:		$kellygreen;
+$revheadcolor:	$softwhite;
+$linkcolor:		$accentorange;
+$rulecolor:		$accentorange;
+
+$navtext:		$softwhite;
+$navhover:		$linkcolor;
+
+$pattern:		"<!-- @path grnstripe.png -->";
 
 // COLOR VARIABLES
 // Using color variables properly (ht @bones)
 // http://sachagreif.com/sass-color-variables/
 
-$bg:            $base9;
-$bg-alt:        $base1;
-$anchor:        $blue;
+$bg:            $softwhite;
+$bg-alt:        $cream;
+$anchor:        $accentorange;
 $anchor-alt:    $navy;
 $loud:          $red;
 $loud-alt:      $brick;
@@ -57,6 +83,6 @@ $layer5: 5; // lightbox content
 // keep some common variables standard
 
 $padding: 20px;
-
-
+$menupadding: 0px 14px 0px 0px;
+$navmargin: 16px 0px 0px 0px;
 
