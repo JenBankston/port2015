@@ -1,5 +1,18 @@
 
 
+
+div.text{
+	h1{
+		margin-top: 1em;
+		text-align: center;
+	}
+	.credits{
+		font-size: em(16);
+		color: $creditcolor;
+		font-weight: lighter;
+	}
+}
+
 .project{
 	@include outer-container;
 			

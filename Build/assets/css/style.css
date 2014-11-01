@@ -763,7 +763,7 @@ section {
           display: block;
           margin-right: 2.35765%;
           width: 31.76157%;
-          height: 25em; }
+          height: 23.125em; }
           section.second div#alpha:last-child {
             margin-right: 0; } }
       section.second div#alpha .end {
@@ -864,7 +864,7 @@ section {
     section #alpha .callout {
       text-align: left;
       width: 80%;
-      border-bottom: 1px solid #ffae61;
+      border-bottom: 1px solid #ff9e42;
       border-right: 0px;
       height: 7em;
       display: inline-block;
@@ -876,7 +876,7 @@ section {
           height: 5em;
           display: block;
           width: 33%;
-          border-right: 1px solid #ffae61;
+          border-right: 1px solid #ff9e42;
           border-bottom: none; } }
       @media (min-width: 925px) {
         section #alpha .callout {
@@ -885,7 +885,7 @@ section {
           display: block;
           width: 90%;
           margin: 0px;
-          border-bottom: 1px solid #ffae61;
+          border-bottom: 1px solid #ff9e42;
           border-right: 0px; } }
       section #alpha .callout h3 {
         font-weight: bolder;
@@ -954,7 +954,7 @@ nav.menubar {
     font-family: "jaf-domus-titling-web", "sans-serif";
     font-weight: bold; }
     nav.menubar a a:hover {
-      color: #ffae61; }
+      color: #ff9e42; }
   nav.menubar .logo {
     width: 100%;
     height: 60px;
@@ -976,7 +976,7 @@ nav.menubar {
         nav.menubar .logo a {
           text-align: left; } }
     nav.menubar .logo a:hover {
-      color: #ffae61; }
+      color: #ff9e42; }
   nav.menubar div.linkbox {
     margin: -4 0 0 0;
     border-right: 2px solid #44b36e;
@@ -998,7 +998,7 @@ nav.menubar {
       nav.menubar div.linkbox {
         display: none; } }
   nav.menubar a:hover {
-    color: #ffae61; }
+    color: #ff9e42; }
   nav.menubar div.mainnav {
     display: inline-block;
     float: center;
@@ -1045,7 +1045,7 @@ nav.menubar {
               margin-top: 12px;
               color: #fffffa; } }
         nav.menubar div.mainnav ul li a:hover {
-          color: #ffae61; }
+          color: #ff9e42; }
 
 section.second header.headline {
   height: 100px;
@@ -1112,49 +1112,89 @@ input[type="submit"] {
   .button:visited:hover,
   button:hover,
   input[type="submit"]:hover {
-    background: #ffae61;
+    background: #ff9e42;
     color: white; }
 
 footer {
-  display: none; }
+  font-weight: lighter;
+  letter-spacing: 1px;
+  display: block;
+  background-color: #44b36e;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  footer:after {
+    content: "";
+    display: table;
+    clear: both; }
+  footer div.footernav {
+    width: 100%;
+    text-align: center;
+    padding: 0; }
+    @media (min-width: 500px) {
+      footer div.footernav {
+        width: 50%;
+        float: right;
+        text-align: right; } }
+    footer div.footernav ul {
+      list-style-type: none;
+      padding: 0; }
+      footer div.footernav ul li {
+        height: 40px;
+        padding: 1em 0 0 0; }
+        @media (min-width: 500px) {
+          footer div.footernav ul li {
+            display: inline;
+            float: right;
+            padding: 0; } }
+        footer div.footernav ul li a {
+          font-size: 1.375em;
+          letter-spacing: 1px;
+          color: #fffffa;
+          padding: 1em 0 0 0; }
+          @media (min-width: 500px) {
+            footer div.footernav ul li a {
+              font-size: 1em;
+              letter-spacing: 1px;
+              padding: .75em 1em 0 0; } }
   @media (min-width: 500px) {
     footer {
       clear: both;
       display: block;
-      background-color: #50d281;
       position: relative;
       bottom: 0px;
       clear: both;
       text-align: center;
-      max-width: 68em;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 30px; }
-      footer:after {
-        content: "";
-        display: table;
-        clear: both; }
+      padding: 30px; } }
+  footer h6 {
+    display: none; }
+    @media (min-width: 500px) {
       footer h6 {
+        display: inline;
         color: #fffffa; } }
 
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -70px; }
+  margin-bottom: -180px; }
+  @media (min-width: 500px) {
+    .page-wrap {
+      margin-bottom: -80px; } }
 
 .page-wrap:after {
   content: "";
   display: block; }
 
 .site-footer, .page-wrap:after {
-  display: none; }
+  height: 180px;
+  display: block; }
   @media (min-width: 500px) {
     .site-footer, .page-wrap:after {
       display: block;
-      height: 70px; } }
+      height: 80px; } }
 
 a {
-  color: #ffae61;
+  color: #ff9e42;
   text-decoration: none;
   cursor: pointer;
   -webkit-transition: all 0.25s ease;
@@ -1162,7 +1202,7 @@ a {
   transition: all 0.25s ease; }
 
 a:link {
-  color: #ffae61; }
+  color: #ff9e42; }
 
 a:hover {
   color: #236b8e; }
@@ -1179,6 +1219,14 @@ img, video, object {
 
 .is-active {
   border-color: #cc0000; }
+
+div.text h1 {
+  margin-top: 1em;
+  text-align: center; }
+div.text .credits {
+  font-size: 1em;
+  color: #c1c1be;
+  font-weight: lighter; }
 
 .project {
   max-width: 68em;
@@ -1238,7 +1286,7 @@ img, video, object {
   right: 6.25em; }
 
 header h1 {
-  float: left; }
+  float: center; }
 header .source {
   float: right; }
 
@@ -1246,8 +1294,7 @@ section {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  margin-bottom: 3em; }
+  text-align: center; }
   section:after {
     content: "";
     display: table;
@@ -1319,33 +1366,3 @@ section {
           margin-right: 0; }
         section.fifth div.box:nth-child(2n+1) {
           clear: left; } }
-  section.third div#dummy {
-    border-bottom: 0;
-    height: 5.5em;
-    text-align: center; }
-  section.third div#alpha {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-    margin-bottom: 0;
-    padding: 0; }
-    section.third div#alpha:last-child {
-      margin-right: 0; }
-    section.third div#alpha:after {
-      content: "";
-      display: table;
-      clear: both; }
-    section.third div#alpha div.port {
-      display: table-cell;
-      width: 33.33333%;
-      padding: 2.35765%;
-      border-right: 1px solid rgba(255, 255, 255, 0.5); }
-    section.third div#alpha article {
-      height: 20em;
-      display: table-cell;
-      width: 66.66667%;
-      padding: 2.35765%; }

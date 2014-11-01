@@ -2,7 +2,7 @@
 
 header {
   h1 {
-    float: left;
+    float: center;
   }
 
   .source {
@@ -13,7 +13,6 @@ header {
 section {
   @include outer-container;
   text-align: center;
-  margin-bottom: 3em;
 
   & > code, code.block {
     display: block;
@@ -67,33 +66,7 @@ section {
    
 }
 
- &.third {
-    div#dummy {
-      border-bottom: 0;
-      height: 5.5em;
-      text-align: center;
-    }
-
-    div#alpha {
-      @include span-columns(12);
-      @include row(table);
-      margin-bottom: 0;
-      padding: 0;
-
-      div.port {
-        @include span-columns(4);
-        @include pad();
-        border-right: 1px solid rgba(255,255,255, 0.5);
-      }
-
-      article {
-        height: 20em;
-        @include span-columns(8);
-        @include reset-display;
-        @include pad();
-      }
-    }
-  }
+ 
 
   }
 

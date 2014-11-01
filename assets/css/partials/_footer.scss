@@ -1,25 +1,78 @@
 // FOOTER
 
+
+
+
 footer {
-	display: none;
-	@include breakpoint(medium){
- 	@include reset-display;
-	clear: both;
+	font-weight: lighter;
+	letter-spacing: 1px;
 	display: block;
-	background-color: $lgtkellygreen;
-    position:relative;
-    bottom:0px;
-    clear: both;
-    text-align: center;
-    @include outer-container;
-    @include pad(30px);
-    
-    h6{color: $navtext;}
-}}
+	background-color: $maincolor;
+	 @include outer-container;								
+				div.footernav{
+					width: 100%;
+					text-align: center;
+					padding: 0;
+					@include breakpoint(medium){
+						width: 50%;
+						float: right; 
+						text-align: right;}
+					ul{
+						list-style-type: none;
+						padding: 0;
+						
+						li{ 
+							height: 40px;
+							padding: 1em 0 0 0;
+							@include breakpoint(medium){display: inline;
+							float: right;
+							padding: 0;}
+							
+
+						
+							a{
+							
+								font-size: em(22);
+								letter-spacing: 1px;
+								color: $navtext;
+								padding: 1em 0 0 0;
+									@include breakpoint(medium){
+									font-size: em(16);
+									letter-spacing: 1px;
+									padding: .75em 1em 0 0;
+									}
+								}
+						
+						}
+					}
+					
+		}
+
+
+	
+	
+	@include breakpoint(medium){
+			 	@include reset-display;
+				clear: both;
+				display: block;
+				position:relative;
+			    bottom:0px;
+			    clear: both;
+			    text-align: center;
+			    @include pad(30px);}
+			    
+			    h6{display:none;
+				    @include breakpoint(medium){ display:inline;
+					    color: $navtext;}
+				    }
+				
+}
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -70px; 
+  margin-bottom: -180px; 
+  @include breakpoint(medium){
+  margin-bottom: -80px; }
 }
 .page-wrap:after {
 	@include reset-display;
@@ -27,7 +80,12 @@ footer {
   display: block;
 }
 .site-footer, .page-wrap:after {
-	display: none;
+	height: 180px;
+	display: block;
 	@include breakpoint(medium){display: block;
-  height: 70px; }
+  height: 80px; }
 }
+
+//nav-footer
+
+
