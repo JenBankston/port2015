@@ -1,8 +1,33 @@
 // FOOTER
 
 footer {
+	display: none;
+	@include breakpoint(medium){
+ 	@include reset-display;
+	clear: both;
+	display: block;
+	background-color: $lgtkellygreen;
+    position:relative;
+    bottom:0px;
     clear: both;
     text-align: center;
     @include outer-container;
     @include pad(30px);
+    
+    h6{color: $navtext;}
+}}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -70px; 
+}
+.page-wrap:after {
+	@include reset-display;
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+	display: none;
+	@include breakpoint(medium){display: block;
+  height: 70px; }
 }

@@ -19,9 +19,10 @@
 @import "partials/typography";
 @import "partials/simplegrid";
 
-@import "partials/menubar";
-@import "partials/headline";
+@import "partials/menubar2";
+
 @import "partials/forms";
+
 @import "partials/footer";
 
 @import "partials/buttons";

@@ -1,0 +1,35 @@
+section.second{
+	
+	header.headline{
+		height: 100px;
+		width: 100%;
+		background-color: $headlinebg;
+		background-image: url("assets/img/grnstripe.png");
+		display: block;
+		border-bottom: $rule solid $headlineborder;
+		@include breakpoint(medium){height: 150px;}
+	
+	
+		h1{
+			font-size: em(24);
+			color: $maincolor;
+			font-weight: $display;
+			margin: auto;
+			padding-top: .5em;
+			float: center;
+			letter-spacing: 2px;
+			@include breakpoint(medium){padding-top: 1em;}
+}
+		h3{
+			font-size: em(64);
+			color: $softwhite;
+			font-weight: $display;
+			margin-top: -1em;
+			float: center;
+			margin: auto;
+			letter-spacing: 2px;
+			}
+}
+		}
+
+

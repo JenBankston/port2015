@@ -27,7 +27,7 @@ $cream: 		#fffedb;
 $kellygreen:	#44b36e;
 $lgtkellygreen:	#50d281;
 $mutedgreen:	#9bd2b0;
-
+$barelygreen:	#cef1db;
 $accentorange:	#ffae61;
 
 $grnblack:		#071a0e;
@@ -44,10 +44,14 @@ $revheadcolor:	$softwhite;
 $linkcolor:		$accentorange;
 $rulecolor:		$accentorange;
 
+$headlineborder:	$lgtkellygreen;
+$headlinebg: 	$barelygreen;
+
 $navtext:		$softwhite;
 $navhover:		$linkcolor;
 
-$pattern:		"<!-- @path grnstripe.png -->";
+$whatsupborder:	$mutedgreen;
+$labelcolor:	$mutedgreen;
 
 // COLOR VARIABLES
 // Using color variables properly (ht @bones)

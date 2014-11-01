@@ -47,30 +47,41 @@ section {
       ;
 
       &#alpha {
-	      height: em(400);
+	      padding: 8px;
+	      height: em(450);
 	       @include span-columns(12);
 	      @include breakpoint(medium){ 
 		       height: em(150);}
 	      @include breakpoint(large){
 				 @include span-columns(4);
-				height: 100%;
-				 
-				  }
+				height: em(400);
+	          }
+				  
+				  
 				   .end{
 				   border: none;}
       }
 
       &#beta {
-        padding: 0;
+        padding: 8px;
         line-height: $body-line-height*3;
         text-align: center;
+         height: auto;
         @include span-columns(12);
         
+         @include breakpoint(medium){
+	         height: auto;
+	         }
+	         
+	         
          @include breakpoint(large){
-	          @include span-columns(8);}
+	          @include span-columns(8);
+	          height: auto;
+	          }
 			  
-			  .box{height: 47%;
+			  .box{height: 49%;
 				  overflow: hidden;
+				  
 			  }
 			  
 				img{width: 100%;}
@@ -78,59 +89,86 @@ section {
 			  
         aside {
 		  border: none;
-          height: 84%;
-          padding: .5px;
-          @include span-columns(12);
-           @include breakpoint(medium){ 
-	           @include span-columns(6 of 12);}
-          @include breakpoint(large){
-	          @include span-columns(4 of 8);}
-
-        }
+          height: 100%;
+          
+	      @include span-columns(12);
+	           @include breakpoint(medium){ 
+		           @include span-columns(6 of 12);}
+	          @include breakpoint(large){
+		          @include span-columns(4 of 8);}
+	
+	        }
 
         article {
 	      border-bottom: 0;
           height: 100%;
-          padding: .5em;
-           @include span-columns(12);
-           @include breakpoint(medium){ 
-	           @include span-columns(6 of 12);
-	           height: 84%;
-			}
-          @include breakpoint(large){
-	          @include span-columns(4 of 8);
-	         }
+	      @include span-columns(12);
+	           @include breakpoint(medium){ 
+		           @include span-columns(6 of 12);
+		           height: 84%;
+				}
+	          @include breakpoint(large){
+		          @include span-columns(4 of 8);
+		         }
 
         }
       }
     }
   }
 	  
-  .callout{
-	  text-align: left;
+ 
+   #alpha{
+	 padding: .25 .25 .5em 0;
+		
+		h1{
+			font-size: em(16);
+			font-weight: normal;
+			padding:6px 0px 6px 0px;
+			text-align: center;
+			border: 1px solid $whatsupborder;
+			line-height: em(20);
+		
+	}
+	p.recentlabel{ 
+		margin: 0 0 0 2em; 
+		font-size: em(15); 
+		text-transform: uppercase; 
+		color: $labelcolor;
+		  
+	  }
+	 .callout{
+	 text-align: left;
 	  width: 80%;
 	  border-bottom: 1px solid $rulecolor;
-	   border-right: 0px ;
-	  
+	  border-right: 0px ;
+	  height: 7em;
+	  display: inline-block;
+	  margin-top: 10px;
+	  margin-bottom: 10px;
 	  
 	   @include breakpoint(medium){
 	  float: left;
+	  height: 5em;
 	  display: block;
-	  width: 28%;
-	  margin: 7px;
+	  width: 33%;
 	  border-right: 1px solid $rulecolor;
 	  border-bottom: none;}
 	  
 	  @include breakpoint(large){
 	  float: none;
+	  height: 8em;
 	  display: block;
 	  width: 90%;
 	  margin: 0px;
 	  border-bottom: 1px solid $rulecolor;
 	   border-right: 0px ;}
 	   
-	   a,
-	   label{padding: 20px 0px 0px 4px;}
+	   h3{ font-weight:bolder; padding: 1em 0 0 1.5em; font-size: em(24); font-weight: normal;
+		    @include breakpoint(medium){font-size: em(18);}
+		    @include breakpoint(large){font-size: em(20);}
+	   }
+	   
+	  
 		  
 	   
 	   
@@ -146,4 +184,18 @@ section {
 	   
 	 }
 
-   
+}
+#beta{
+	 padding: .25 0 .5em 0;
+	 margin: .5em .5em 0 0;
+		background-image: url("assets/img/grnstripe.png");
+		h1{
+			font-size: em(16);
+			background-color: $softwhite;
+			font-weight: normal;
+			padding:6px 0px 6px 0px;
+			text-align: center;
+			border: 1px solid $whatsupborder;
+			line-height: em(20);
+}
+}

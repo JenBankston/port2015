@@ -19,11 +19,12 @@
 @import "partials/typography";
 @import "partials/simplegrid";
 
-@import "partials/menubar";
-@import "partials/headline";
-@import "partials/forms";
-@import "partials/footer";
+@import "partials/menubar2";
 
+@import "partials/forms";
+
+@import "partials/footer";
+@import "partials/menus";
 @import "partials/buttons";
 @import "partials/media";
 @import "partials/states";

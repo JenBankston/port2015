@@ -1,0 +1,122 @@
+@mixin vertical-align {
+  position: relative;
+  top: 18%;
+  -webkit-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
+  transform: translateY(-20%);
+}
+
+
+
+
+nav.menubar{
+	display: block;
+	height: 120px;
+	border-bottom: 2px solid $maincolor;
+	 @include outer-container;
+	 background: $bg;
+	 
+	 @include breakpoint(large){
+		 height: 60px;
+		 background: $maincolor;
+	 }
+	 
+	 div{
+		 display: inline-block;
+	 }
+	
+	a{
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: $sans;
+        font-weight: bold;
+       
+     a:hover{color: $linkcolor;}
+        
+        
+
+	}
+	
+	.logo{
+		width:100%;
+		height: 60px;
+		letter-spacing: 2px;
+		font-size: em(28);
+		background-color: $maincolor;
+		text-align: center;
+		padding: 18px 0 0 0px;
+		
+		 @include breakpoint(large){ 
+		 	text-align: left; width: 50%; float: left; padding: 15px 0 0 1em; }
+		
+		a{ color: $navtext;
+			text-align: center;
+			 @include breakpoint(large){ text-align: left;}
+
+		}
+		 a:hover{color: $linkcolor;} 
+		 
+	}
+	div.linkbox{margin: -4 0 0 0; border-right: $rule solid $maincolor;position: relative; height: 59px; width: 25%;  float: left;text-align: center;
+		
+		a{@include vertical-align; color: $maincolor; @include font-size(22);}
+					
+			@include breakpoint(medium){display: none;}
+			}
+		 a:hover{color: $linkcolor;}	
+		
+	
+		
+	div.mainnav{
+		display: inline-block;
+		float: center;
+		height: 60px;
+		width: 100%;
+		text-align: center;
+	
+		 @include breakpoint(large){
+		 	text-align: right; width: 50%; float: right; margin-top: 0px;}
+		 	
+		
+		
+		ul{
+			display: none;
+			width:100%;
+			@include breakpoint(medium){
+				display: inline;
+				float: center;
+				@include breakpoint(large){ height: 100%;
+				margin: 12px 0 0 0;}
+			}
+			
+			li{
+		
+					display: inline-block;
+					font-size: em(22);
+					padding: 18px 2em 0 0;
+					
+					@include breakpoint(large){
+					font-size: em(16); padding: 13px 2em 0 0}
+			
+				a{	@include vertical-align; 
+					color: $maincolor;
+					border: none;
+					display: inline-block;
+					text-align: center;
+					 @include breakpoint(large){ margin-top: 12px;
+					 color: $navtext;}
+				}
+				 a:hover{color: $linkcolor;}
+				}
+			}
+		}
+		
+		
+			
+		
+		
+	}
+	
+	
+	
+	
